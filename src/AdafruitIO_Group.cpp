@@ -203,7 +203,7 @@ bool AdafruitIO_Group::save() {
   if (data == NULL)
     return false;
 
-  char csv[150];
+  char csv[1024];
   AdafruitIO_Data *cur_data = data;
 
   strcpy(csv, "");
